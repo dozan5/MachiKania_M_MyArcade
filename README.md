@@ -4,6 +4,19 @@
 　[小型カラー液晶搭載マイコンゲームシステム](http://www.ze.em-net.ne.jp/~kenken/lcdgame/index.html)を参考にPIC32MX370F512H版の  
 　LCDブートローダーとLCDゲームを移植しました。  
 
+[LCDゲーム](http://www.ze.em-net.ne.jp/~kenken/lcdgame/index.html)
+　箱入り娘パズル  
+　インベーダー  
+　パックマン  
+　テトリス  
+　ペグソリテア  
+　写真立て  
+　Veludda  
+
+[BRAIN様](http://braincell.synapse-blog.jp/cell/)
+　倉庫番  
+　Xeviousモドキ  
+ 
 ## 実機写真   
 ![](My1.jpg)  
 ![](My2.jpg)  
