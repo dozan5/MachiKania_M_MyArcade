@@ -34,8 +34,4 @@
 　　　◆3.2インチ aitendo [LCD032-2P](https://www.aitendo.com/product/13748)(SSD1289)  
 　　　　　※（Arduino互換のpin配列に変換が必要）  
 　　　◆MY ARCADE搭載LCD対応  
-　　　　　LCDの素性を調査するとreg(0x0004) 85 85 52　でST7789との事でした。  
-　　　　　このIDはSPI液晶用でしたので信憑性は薄く　今回は16bitモード、基本的な  
-     　　初期化のみ搭載しています。  
 　　　　　ソフトは縦モードと横モードの両方を用意しました。  
-     
