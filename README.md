@@ -7,13 +7,13 @@
 　LCDとの接続は[こちら](https://github.com/dozan5/MachiKania_M_Xevious_lcd)を参照ください。  
  
 370版LCDブートローダー対応コントローラー  
-　　ILI9325(8bit)  
-　　S6D0154(8bit)  
-　　ILI9341(8bit)  
-　　SSD1289(8bit)  
-　　HX8347(8bit)  
-　　ST7789(16bit）  
-　　　※　縦、横モード対応  
+　ILI9325(8bit)  
+　S6D0154(8bit)  
+　ILI9341(8bit)  
+　SSD1289(8bit)  
+　HX8347(8bit)  
+　ST7789(16bit）  
+　　※　縦、横モード対応  
  
 [LCDゲーム](http://www.ze.em-net.ne.jp/~kenken/lcdgame/index.html)  
 　箱入り娘パズル  
@@ -50,8 +50,6 @@
 
 ## 起動方法
 　　1. 各コントローラーのSDフォルダーのHEXファイル（実行ファイル）をSDカードに保存。  
-　　　　※ファイル名は8文字以下に変更しコピー願います。  
 　　2. MachiKania type MにてLCDブートローダを起動しリストからHEXファイルを  
 　　　　選択しLOADする。  
 　　3. 一度起動すると次回からは電源を入れると直ぐにゲームが始まります。 
-　
