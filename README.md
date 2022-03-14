@@ -14,7 +14,9 @@
 　HX8347(8bit)  
 　ST7789(16bit）  
 　　※　縦、横モード対応  
- 
+
+　　　PICライタ(PICkit3,MPLAB SNAPなど）でbootloader.hexを書き込んでください。  
+
 [LCDゲーム](http://www.ze.em-net.ne.jp/~kenken/lcdgame/index.html)  
 　箱入り娘パズル  
 　インベーダー  
@@ -28,6 +30,8 @@
 　おまけ  
 　　Xeviousモドキ  
  
+ 　　　SDカードへhexファイルをコピーしてください。  
+
 ## 実機写真   
 ![](My1.jpg)  
 ![](My2.jpg)  
