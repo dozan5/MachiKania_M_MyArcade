@@ -4,7 +4,18 @@
 　[小型カラー液晶搭載マイコンゲームシステム](http://www.ze.em-net.ne.jp/~kenken/lcdgame/index.html)を参考にブートローダーとゲームを  
 　PIC32MX370F512Hへ移植しました。  
 
-[ケンケン様作成LCDゲーム](http://www.ze.em-net.ne.jp/~kenken/lcdgame/index.html)  
+　LCDとの接続は[こちら](https://github.com/dozan5/MachiKania_M_Xevious_lcd)を参照ください。  
+ 
+370版LCDブートローダー対応コントローラー  
+　　ILI9325(8bit)  
+　　S6D0154(8bit)  
+　　ILI9341(8bit)  
+　　SSD1289(8bit)  
+　　HX8347(8bit)  
+　　ST7789(16bit）  
+　　　※　縦、横モード対応  
+ 
+[LCDゲーム](http://www.ze.em-net.ne.jp/~kenken/lcdgame/index.html)  
 　箱入り娘パズル  
 　インベーダー  
 　パックマン  
@@ -12,7 +23,7 @@
 　ペグソリテア  
 　写真立て  
 　Veludda  
-　[倉庫番](http://braincell.synapse-blog.jp/cell/)  
+　倉庫番　[原作 BRAIN様](http://braincell.synapse-blog.jp/cell/)  
 
 　おまけ  
 　　Xeviousモドキ  
