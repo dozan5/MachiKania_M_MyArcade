@@ -1,0 +1,1 @@
+ $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -O1   -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)    C:\Users\Z390-A\Desktop\ili9341\bootloader370f_ILI9341_X\NVMem.c
