@@ -12,8 +12,10 @@
 　ILI9341(8bit)  
 　SSD1289(8bit)  
 　HX8347(8bit)  
-　ST7789(16bit）  
-　　※　縦、横モード対応  
+ 
+　ILI9341(16bit)  
+　SSD1289(16bit)  
+　ST7789(16bit）※　縦、横モード対応  
 
 　　　PICライタ(PICkit3,MPLAB SNAPなど）でbootloader.hexを書き込んでください。  
 
