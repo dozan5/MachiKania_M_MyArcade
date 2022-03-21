@@ -1,1 +1,0 @@
- $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -O1   -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)    C:\Users\Z390-A\Desktop\HX8347\AP\LCD_pacman_X\pacman2.c

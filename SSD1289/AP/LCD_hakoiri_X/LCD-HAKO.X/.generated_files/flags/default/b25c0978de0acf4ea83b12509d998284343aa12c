@@ -1,1 +1,0 @@
- $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -O1   -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)    C:\Users\Z390-A\Desktop\SSD1289\AP\LCD_hakoiri_X\hakoirimusume.c
