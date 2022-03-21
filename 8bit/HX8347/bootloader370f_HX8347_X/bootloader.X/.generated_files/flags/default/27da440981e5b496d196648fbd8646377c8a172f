@@ -1,0 +1,1 @@
+ $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -O1   -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)    D:\DOWN\PIC\PIC32MX370\HX8347\bootloader370f_HX8347_X\LCDdriver.c
