@@ -1,0 +1,1 @@
+ $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -O1   -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)    D:\DOWN\PIC\PIC32MX370\SSD1289_16\AP\LCD_veludda_X\musicdata.c
