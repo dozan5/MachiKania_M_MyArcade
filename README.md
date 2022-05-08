@@ -4,6 +4,9 @@
 　[小型カラー液晶搭載マイコンゲームシステム](http://www.ze.em-net.ne.jp/~kenken/lcdgame/index.html)を参考にブートローダーとゲームを  
 　PIC32MX370F512Hへ移植しました。  
 
+　尚　ROLLING THUNDER搭載のLCDは16bit接続　BUBBLE BOBBLE搭載のLCDは8bit接続でした。  
+  8bit接続LCDは下位bitのD0-D7のみ接続、制御系は16bit接続と同じ接続になります。  
+  
 　LCDとの接続は[こちら](https://github.com/dozan5/MachiKania_M_Xevious_lcd)を参照ください。  
  
 370版LCDブートローダー対応コントローラー  
