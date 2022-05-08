@@ -64,7 +64,6 @@ MY ARCADE搭載LCDの違い
 　　　◆3.2インチ aitendo [LCD032-2P](https://www.aitendo.com/product/13748)(SSD1289)  
 　　　　　※（Arduino互換のpin配列に変換が必要）  
 　　　◆MY ARCADE搭載LCD対応(ST7789？)  
-　　　　　詳細は[こちら](https://github.com/dozan5/MachiKania_M_Xevious_lcd)を参照ください。  
 　　　　　ソフトは縦モードと横モードの両方を用意しました。  
 
 ## 起動方法
