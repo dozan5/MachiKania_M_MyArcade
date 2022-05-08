@@ -65,12 +65,32 @@ void LCD_WriteData16(unsigned short data){
 	LCD_set_dat(data);
 }
 
+unsigned short LCD_get_dat(void){
+	unsigned short d;
+	d=PORTB & LCD_DAT_MASK;
+    return d;
+}
+
+unsigned short LCD_ReadData(void){
+// Read Data
+	unsigned short d;
+	TRISBSET=LCD_DAT_MASK;
+	LCD_RD_LO;
+	asm("nop");asm("nop");asm("nop");asm("nop");asm("nop");
+	asm("nop");asm("nop");asm("nop");asm("nop");asm("nop");
+	asm("nop");asm("nop");asm("nop");asm("nop");asm("nop");
+	d=LCD_get_dat();
+	LCD_RD_HI;
+	TRISBCLR=LCD_DAT_MASK;
+	return d;
+}
+
 void LCD_SetCursor(unsigned short x, unsigned short y){
-    LCD_WriteIndex(0x2a);
+    LCD_WriteIndex(0x2A);
     LCD_WriteData2(x);
-    LCD_WriteIndex(0x2b);
+    LCD_WriteIndex(0x2B);
     LCD_WriteData2(y);
-	LCD_WriteIndex(0x2c);
+	LCD_WriteIndex(0x2C);
 }
 
 void LCD_continuous_output(unsigned short x,unsigned short y,unsigned short color,int n){
@@ -88,4 +108,16 @@ void LCD_Clear(unsigned short color){
 void drawPixel(unsigned short x, unsigned short y, unsigned short color){
 	LCD_SetCursor(x,y);
 	LCD_WriteData16(color);
+}
+
+unsigned short getColor(unsigned short x, unsigned short y){
+	unsigned short d, temp;
+	LCD_SetCursor(x,y);
+	LCD_WriteIndex(0x2E);
+	LCD_ReadData(); //dummy read
+	temp=LCD_ReadData();
+    d=(temp & 0xF800) >> 11 | (temp & 0x00FC) << 3;
+	d=d | (LCD_ReadData() & 0xF800);
+
+	return d;
 }

@@ -36,6 +36,31 @@
 #include <plib.h>
 #include "LCDdriver.h"
 
+volatile unsigned short delaytimerflag;
+
+/**********************
+*  Timer5 割り込み処理関数
+***********************/
+void __ISR(20, ipl4) T5Handler(){
+	delaytimerflag=1;
+	IFS0bits.T5IF=0;    // T5割り込みフラグクリア
+}
+
+void delay_us(int t){
+	delaytimerflag=0;
+	PR5=48*t;   // tマイクロ秒
+	T5CONSET=0x8000;
+	while(delaytimerflag==0) asm("wait");	// sleepで待機
+	T5CONCLR=0x8000;
+}
+
+void delay_ms(int t){
+	while(t>0){
+		delay_us(1000);
+		t--;
+	}
+}
+
 void inline LCD_set_dat(unsigned short c){
 	LCD_DATSET=c;
 	LCD_DATCLR=~c & LCD_DAT_MASK;
@@ -63,6 +88,72 @@ void LCD_WriteData2(unsigned short data){
 
 void LCD_WriteData16(unsigned short data){
 	LCD_set_dat(data);
+}
+
+unsigned short LCD_get_dat(void){
+	unsigned short d;
+	d=PORTB & LCD_DAT_MASK;
+    return d;
+}
+
+unsigned short LCD_ReadData(void){
+// Read Data
+	unsigned short d;
+	TRISBSET=LCD_DAT_MASK;
+	LCD_RD_LO;
+	asm("nop");asm("nop");asm("nop");asm("nop");asm("nop");
+	asm("nop");asm("nop");asm("nop");asm("nop");asm("nop");
+	asm("nop");asm("nop");asm("nop");asm("nop");asm("nop");
+	d=LCD_get_dat();
+	LCD_RD_HI;
+	TRISBCLR=LCD_DAT_MASK;
+	return d;
+}
+
+void LCD_Init(){
+	LCD_CS_HI;                  // Disable LCD
+	LCD_RESET_LO;               // Hold in reset
+	LCD_RS_LO;
+	LCD_WR_HI;
+	LCD_RD_HI;
+
+	// Reset controller
+	LCD_RESET_HI;
+	delay_ms(120);
+	LCD_RESET_LO;
+	delay_ms(10);
+	LCD_RESET_HI;
+	delay_ms(120);
+
+	LCD_CS_LO; // Enable LCD
+
+    LCD_WriteIndex(0x11);		// Sleep OUT
+    delay_ms(50);
+
+    LCD_WriteIndex(0x20);		// Display Inversion OFF
+
+    LCD_WriteIndex(0x36);  // Memory Access Control 
+	LCD_WriteData(0xC0);
+//	LCD_WriteData(0x60);
+
+    LCD_WriteIndex(0x3A);		// Interface Pixel Format
+   	LCD_WriteData(0x55);
+
+    LCD_WriteIndex(0x2A);		// Column Addess Set
+    LCD_WriteData2(0x0000);
+    LCD_WriteData2(LCD_X_RES-1);
+
+    LCD_WriteIndex(0x2B);		// Page Address Set
+    LCD_WriteData2(0x0000);
+    LCD_WriteData2(LCD_Y_RES-1);
+	delay_ms(50);
+
+    LCD_WriteIndex(0x29);		// Display ON
+    LCD_WriteIndex(0x2C);		// Memory Write
+
+	LCD_CS_HI;
+	delay_ms(30);
+	LCD_CS_LO;
 }
 
 void LCD_SetCursor(unsigned short x, unsigned short y){
@@ -93,6 +184,17 @@ void LCD_Clear(unsigned short color){
 void drawPixel(unsigned short x, unsigned short y, unsigned short color){
 	LCD_SetCursor(x,y);
 	LCD_WriteData16(color);
+}
+
+unsigned short getColor(unsigned short x, unsigned short y){
+	unsigned short d, temp;
+	LCD_SetCursor(x,y);
+	LCD_WriteIndex(0x2E);
+	LCD_ReadData(); //dummy read
+	temp=LCD_ReadData();
+    d=(temp & 0xF800) >> 11 | (temp & 0x00FC) << 3;
+	d=d | (LCD_ReadData() & 0xF800);
+	return d;
 }
 
 void LCD_set_Vertical(void){

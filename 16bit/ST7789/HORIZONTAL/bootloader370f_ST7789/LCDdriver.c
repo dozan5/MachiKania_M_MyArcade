@@ -22,7 +22,7 @@
  CS   RD7
  WR   RD8
  RS   RD9
- RD   Vdd
+ RD   RG2
 
  SDカード接続ポート
  SPI DO RG8  (O)

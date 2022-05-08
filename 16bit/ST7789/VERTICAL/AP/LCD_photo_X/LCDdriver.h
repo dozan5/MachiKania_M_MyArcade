@@ -22,7 +22,6 @@ void LCD_WriteIndex(unsigned char index);
 void LCD_WriteData(unsigned char data);
 void LCD_WriteData16(unsigned short data);
 unsigned short LCD_ReadData(void);
-unsigned char LCD_ReadData8(void);
 unsigned short getColor(unsigned short x, unsigned short y);
 
 void LCD_Init(void);

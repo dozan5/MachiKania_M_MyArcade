@@ -95,13 +95,13 @@ MP_LINKER_FILE_OPTION=,--script="..\app_p32MX370F512H.ld"
 # ------------------------------------------------------------------------------------
 # Rules for buildStep: assemble
 ifeq ($(TYPE_IMAGE), DEBUG_RUN)
-${OBJECTDIR}/_ext/1472/bmpdata.o: ../bmpdata.s  .generated_files/flags/default/722e9a0f610b56ce57ab87068b5f51748f20f375 .generated_files/flags/default/1d447ed2c61cac8a5a27d2ab970f84c7592e516e
+${OBJECTDIR}/_ext/1472/bmpdata.o: ../bmpdata.s  .generated_files/flags/default/8bc5d63df733afd5793a048fbc2c0c0fe7697e00 .generated_files/flags/default/1d447ed2c61cac8a5a27d2ab970f84c7592e516e
 	@${MKDIR} "${OBJECTDIR}/_ext/1472" 
 	@${RM} ${OBJECTDIR}/_ext/1472/bmpdata.o 
 	${MP_CC} $(MP_EXTRA_AS_PRE)  -D__DEBUG   -c -mprocessor=$(MP_PROCESSOR_OPTION)  -o ${OBJECTDIR}/_ext/1472/bmpdata.o ../bmpdata.s  -Wa,--defsym=__MPLAB_BUILD=1$(MP_EXTRA_AS_POST),--defsym=__ICD2RAM=1,--defsym=__MPLAB_DEBUG=1,--defsym=__DEBUG=1,--gdwarf-2,-MD="${OBJECTDIR}/_ext/1472/bmpdata.o.d" 
 	
 else
-${OBJECTDIR}/_ext/1472/bmpdata.o: ../bmpdata.s  .generated_files/flags/default/368209634d5b51eed26d66cf7ee6f3c8816e5468 .generated_files/flags/default/1d447ed2c61cac8a5a27d2ab970f84c7592e516e
+${OBJECTDIR}/_ext/1472/bmpdata.o: ../bmpdata.s  .generated_files/flags/default/79b36081eb1431d4eacef68646f2e851230ae184 .generated_files/flags/default/1d447ed2c61cac8a5a27d2ab970f84c7592e516e
 	@${MKDIR} "${OBJECTDIR}/_ext/1472" 
 	@${RM} ${OBJECTDIR}/_ext/1472/bmpdata.o 
 	${MP_CC} $(MP_EXTRA_AS_PRE)  -c -mprocessor=$(MP_PROCESSOR_OPTION)  -o ${OBJECTDIR}/_ext/1472/bmpdata.o ../bmpdata.s  -Wa,--defsym=__MPLAB_BUILD=1$(MP_EXTRA_AS_POST),--gdwarf-2,-MD="${OBJECTDIR}/_ext/1472/bmpdata.o.d" 
@@ -117,86 +117,86 @@ endif
 # ------------------------------------------------------------------------------------
 # Rules for buildStep: compile
 ifeq ($(TYPE_IMAGE), DEBUG_RUN)
-${OBJECTDIR}/_ext/1472/graphlib2.o: ../graphlib2.c  .generated_files/flags/default/76675d5cdf4b49586ff9f0db988024aeaf5ba023 .generated_files/flags/default/1d447ed2c61cac8a5a27d2ab970f84c7592e516e
+${OBJECTDIR}/_ext/1472/graphlib2.o: ../graphlib2.c  .generated_files/flags/default/d9152f23a279c2444716af89f52e5cbb37e2ae1c .generated_files/flags/default/1d447ed2c61cac8a5a27d2ab970f84c7592e516e
 	@${MKDIR} "${OBJECTDIR}/_ext/1472" 
 	@${RM} ${OBJECTDIR}/_ext/1472/graphlib2.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1472/graphlib2.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -O1 -MP -MMD -MF "${OBJECTDIR}/_ext/1472/graphlib2.o.d" -o ${OBJECTDIR}/_ext/1472/graphlib2.o ../graphlib2.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)    
 	
-${OBJECTDIR}/_ext/1472/musicdata.o: ../musicdata.c  .generated_files/flags/default/d0e31c86a42b12a78fbe04c3c1ee62f324a3259b .generated_files/flags/default/1d447ed2c61cac8a5a27d2ab970f84c7592e516e
+${OBJECTDIR}/_ext/1472/musicdata.o: ../musicdata.c  .generated_files/flags/default/da402563c574b93591eb5452327c56d8adaeb4d6 .generated_files/flags/default/1d447ed2c61cac8a5a27d2ab970f84c7592e516e
 	@${MKDIR} "${OBJECTDIR}/_ext/1472" 
 	@${RM} ${OBJECTDIR}/_ext/1472/musicdata.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1472/musicdata.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -O1 -MP -MMD -MF "${OBJECTDIR}/_ext/1472/musicdata.o.d" -o ${OBJECTDIR}/_ext/1472/musicdata.o ../musicdata.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)    
 	
-${OBJECTDIR}/_ext/1472/rotatevideo_lcd.o: ../rotatevideo_lcd.c  .generated_files/flags/default/be611f944feaef8e27058b2e2c0cb535e989d424 .generated_files/flags/default/1d447ed2c61cac8a5a27d2ab970f84c7592e516e
+${OBJECTDIR}/_ext/1472/rotatevideo_lcd.o: ../rotatevideo_lcd.c  .generated_files/flags/default/9177bd48b47062d8194dd2ba2e9b0b029bc40b14 .generated_files/flags/default/1d447ed2c61cac8a5a27d2ab970f84c7592e516e
 	@${MKDIR} "${OBJECTDIR}/_ext/1472" 
 	@${RM} ${OBJECTDIR}/_ext/1472/rotatevideo_lcd.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1472/rotatevideo_lcd.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -O1 -MP -MMD -MF "${OBJECTDIR}/_ext/1472/rotatevideo_lcd.o.d" -o ${OBJECTDIR}/_ext/1472/rotatevideo_lcd.o ../rotatevideo_lcd.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)    
 	
-${OBJECTDIR}/_ext/1472/veludda_chars.o: ../veludda_chars.c  .generated_files/flags/default/7f7accac9a142a839583ac5ab8c5cb1cc4334c83 .generated_files/flags/default/1d447ed2c61cac8a5a27d2ab970f84c7592e516e
+${OBJECTDIR}/_ext/1472/veludda_chars.o: ../veludda_chars.c  .generated_files/flags/default/8aa26a71fbe29ae7687dfa085162ca32ac6fe37b .generated_files/flags/default/1d447ed2c61cac8a5a27d2ab970f84c7592e516e
 	@${MKDIR} "${OBJECTDIR}/_ext/1472" 
 	@${RM} ${OBJECTDIR}/_ext/1472/veludda_chars.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1472/veludda_chars.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -O1 -MP -MMD -MF "${OBJECTDIR}/_ext/1472/veludda_chars.o.d" -o ${OBJECTDIR}/_ext/1472/veludda_chars.o ../veludda_chars.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)    
 	
-${OBJECTDIR}/_ext/1472/veludda_lcd.o: ../veludda_lcd.c  .generated_files/flags/default/2a8c7395ec09e875edeec8862f14363e17eb66c6 .generated_files/flags/default/1d447ed2c61cac8a5a27d2ab970f84c7592e516e
+${OBJECTDIR}/_ext/1472/veludda_lcd.o: ../veludda_lcd.c  .generated_files/flags/default/e7cc232b5c62ad1ebfd4d0074204f1d3d3860f1f .generated_files/flags/default/1d447ed2c61cac8a5a27d2ab970f84c7592e516e
 	@${MKDIR} "${OBJECTDIR}/_ext/1472" 
 	@${RM} ${OBJECTDIR}/_ext/1472/veludda_lcd.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1472/veludda_lcd.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -O1 -MP -MMD -MF "${OBJECTDIR}/_ext/1472/veludda_lcd.o.d" -o ${OBJECTDIR}/_ext/1472/veludda_lcd.o ../veludda_lcd.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)    
 	
-${OBJECTDIR}/_ext/1472/LCDdriver.o: ../LCDdriver.c  .generated_files/flags/default/253a3d083480ba12d85139470b3cfcc5a4f6cd00 .generated_files/flags/default/1d447ed2c61cac8a5a27d2ab970f84c7592e516e
+${OBJECTDIR}/_ext/1472/LCDdriver.o: ../LCDdriver.c  .generated_files/flags/default/91b4676246e747bd5c35c0165906fcb59e421064 .generated_files/flags/default/1d447ed2c61cac8a5a27d2ab970f84c7592e516e
 	@${MKDIR} "${OBJECTDIR}/_ext/1472" 
 	@${RM} ${OBJECTDIR}/_ext/1472/LCDdriver.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1472/LCDdriver.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -O1 -MP -MMD -MF "${OBJECTDIR}/_ext/1472/LCDdriver.o.d" -o ${OBJECTDIR}/_ext/1472/LCDdriver.o ../LCDdriver.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)    
 	
-${OBJECTDIR}/_ext/1472/recscore.o: ../recscore.c  .generated_files/flags/default/80ff6befddf035d7c828306441a7e157f4f460f4 .generated_files/flags/default/1d447ed2c61cac8a5a27d2ab970f84c7592e516e
+${OBJECTDIR}/_ext/1472/recscore.o: ../recscore.c  .generated_files/flags/default/949f5bc2f929680cf71d30ecd32357ff1b8d3a3b .generated_files/flags/default/1d447ed2c61cac8a5a27d2ab970f84c7592e516e
 	@${MKDIR} "${OBJECTDIR}/_ext/1472" 
 	@${RM} ${OBJECTDIR}/_ext/1472/recscore.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1472/recscore.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -O1 -MP -MMD -MF "${OBJECTDIR}/_ext/1472/recscore.o.d" -o ${OBJECTDIR}/_ext/1472/recscore.o ../recscore.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)    
 	
 else
-${OBJECTDIR}/_ext/1472/graphlib2.o: ../graphlib2.c  .generated_files/flags/default/3739a4fd23cd076083a48443b2c86f1e347d5011 .generated_files/flags/default/1d447ed2c61cac8a5a27d2ab970f84c7592e516e
+${OBJECTDIR}/_ext/1472/graphlib2.o: ../graphlib2.c  .generated_files/flags/default/64d92fa92c0d9206acc4c9ddff9c6b3ec6a25905 .generated_files/flags/default/1d447ed2c61cac8a5a27d2ab970f84c7592e516e
 	@${MKDIR} "${OBJECTDIR}/_ext/1472" 
 	@${RM} ${OBJECTDIR}/_ext/1472/graphlib2.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1472/graphlib2.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -O1 -MP -MMD -MF "${OBJECTDIR}/_ext/1472/graphlib2.o.d" -o ${OBJECTDIR}/_ext/1472/graphlib2.o ../graphlib2.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)    
 	
-${OBJECTDIR}/_ext/1472/musicdata.o: ../musicdata.c  .generated_files/flags/default/1f0bdc51742698963f515de001e1ca4ebc16db56 .generated_files/flags/default/1d447ed2c61cac8a5a27d2ab970f84c7592e516e
+${OBJECTDIR}/_ext/1472/musicdata.o: ../musicdata.c  .generated_files/flags/default/1b393f41db4e66d2bb1e4c466c2642ec60537627 .generated_files/flags/default/1d447ed2c61cac8a5a27d2ab970f84c7592e516e
 	@${MKDIR} "${OBJECTDIR}/_ext/1472" 
 	@${RM} ${OBJECTDIR}/_ext/1472/musicdata.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1472/musicdata.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -O1 -MP -MMD -MF "${OBJECTDIR}/_ext/1472/musicdata.o.d" -o ${OBJECTDIR}/_ext/1472/musicdata.o ../musicdata.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)    
 	
-${OBJECTDIR}/_ext/1472/rotatevideo_lcd.o: ../rotatevideo_lcd.c  .generated_files/flags/default/d0ef287e18ce32bea1015c57acbeb70f0045b85 .generated_files/flags/default/1d447ed2c61cac8a5a27d2ab970f84c7592e516e
+${OBJECTDIR}/_ext/1472/rotatevideo_lcd.o: ../rotatevideo_lcd.c  .generated_files/flags/default/d6cbb0620b66be54fb8d999147fdbec92119dbfd .generated_files/flags/default/1d447ed2c61cac8a5a27d2ab970f84c7592e516e
 	@${MKDIR} "${OBJECTDIR}/_ext/1472" 
 	@${RM} ${OBJECTDIR}/_ext/1472/rotatevideo_lcd.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1472/rotatevideo_lcd.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -O1 -MP -MMD -MF "${OBJECTDIR}/_ext/1472/rotatevideo_lcd.o.d" -o ${OBJECTDIR}/_ext/1472/rotatevideo_lcd.o ../rotatevideo_lcd.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)    
 	
-${OBJECTDIR}/_ext/1472/veludda_chars.o: ../veludda_chars.c  .generated_files/flags/default/da18fc3b98b8a4c0151a85a88cd55d0fef2daa1e .generated_files/flags/default/1d447ed2c61cac8a5a27d2ab970f84c7592e516e
+${OBJECTDIR}/_ext/1472/veludda_chars.o: ../veludda_chars.c  .generated_files/flags/default/dccf96cf690919b3ce39ef8f7f776d0eab511c47 .generated_files/flags/default/1d447ed2c61cac8a5a27d2ab970f84c7592e516e
 	@${MKDIR} "${OBJECTDIR}/_ext/1472" 
 	@${RM} ${OBJECTDIR}/_ext/1472/veludda_chars.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1472/veludda_chars.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -O1 -MP -MMD -MF "${OBJECTDIR}/_ext/1472/veludda_chars.o.d" -o ${OBJECTDIR}/_ext/1472/veludda_chars.o ../veludda_chars.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)    
 	
-${OBJECTDIR}/_ext/1472/veludda_lcd.o: ../veludda_lcd.c  .generated_files/flags/default/2b1c8bc878c74c7b2864225720e025c85afa2ef5 .generated_files/flags/default/1d447ed2c61cac8a5a27d2ab970f84c7592e516e
+${OBJECTDIR}/_ext/1472/veludda_lcd.o: ../veludda_lcd.c  .generated_files/flags/default/32d1b4a5f544f3d315e52eeee5e06e21f6e4e1dc .generated_files/flags/default/1d447ed2c61cac8a5a27d2ab970f84c7592e516e
 	@${MKDIR} "${OBJECTDIR}/_ext/1472" 
 	@${RM} ${OBJECTDIR}/_ext/1472/veludda_lcd.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1472/veludda_lcd.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -O1 -MP -MMD -MF "${OBJECTDIR}/_ext/1472/veludda_lcd.o.d" -o ${OBJECTDIR}/_ext/1472/veludda_lcd.o ../veludda_lcd.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)    
 	
-${OBJECTDIR}/_ext/1472/LCDdriver.o: ../LCDdriver.c  .generated_files/flags/default/fbccc305ea2009505102d9c8c9d560c64b1683e8 .generated_files/flags/default/1d447ed2c61cac8a5a27d2ab970f84c7592e516e
+${OBJECTDIR}/_ext/1472/LCDdriver.o: ../LCDdriver.c  .generated_files/flags/default/ba79de79d7dceebaa5f2f0a0704ebeae028261db .generated_files/flags/default/1d447ed2c61cac8a5a27d2ab970f84c7592e516e
 	@${MKDIR} "${OBJECTDIR}/_ext/1472" 
 	@${RM} ${OBJECTDIR}/_ext/1472/LCDdriver.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1472/LCDdriver.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -O1 -MP -MMD -MF "${OBJECTDIR}/_ext/1472/LCDdriver.o.d" -o ${OBJECTDIR}/_ext/1472/LCDdriver.o ../LCDdriver.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)    
 	
-${OBJECTDIR}/_ext/1472/recscore.o: ../recscore.c  .generated_files/flags/default/ae3442132b791acda340d3d9117207b9a8634894 .generated_files/flags/default/1d447ed2c61cac8a5a27d2ab970f84c7592e516e
+${OBJECTDIR}/_ext/1472/recscore.o: ../recscore.c  .generated_files/flags/default/47b9ad3853163e499cb05c1d86243d1b338e1e35 .generated_files/flags/default/1d447ed2c61cac8a5a27d2ab970f84c7592e516e
 	@${MKDIR} "${OBJECTDIR}/_ext/1472" 
 	@${RM} ${OBJECTDIR}/_ext/1472/recscore.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1472/recscore.o 

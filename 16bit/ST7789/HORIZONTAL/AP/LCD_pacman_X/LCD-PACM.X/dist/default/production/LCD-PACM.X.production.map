@@ -209,27 +209,27 @@ section                    address  length [bytes]      (dec)  Description
 .rodata                 0x9d007490         0x64bc       25788  Read-only const 
 .text                   0x9d00d94c         0x5970       22896  App's exec code 
 .dinit                  0x9d0132bc          0x4a0        1184   
-.text                   0x9d01375c          0x4bc        1212  App's exec code 
-.text._NVMOperation     0x9d013c18          0x114         276   
-.rodata                 0x9d013d2c           0xec         236  Read-only const 
-.text.general_exception 0x9d013e18           0xdc         220   
-.text.main_entry        0x9d013ef4           0x4c          76   
-.text._bootstrap_except 0x9d013f40           0x48          72   
-.text._general_exceptio 0x9d013f88           0x48          72   
-.text                   0x9d013fd0           0x44          68  App's exec code 
-.text.NVMWriteRow       0x9d014014           0x38          56   
-.vector_default         0x9d01404c           0x38          56   
-.text.INTEnableSystemMu 0x9d014084           0x34          52   
-.text.NVMErasePage      0x9d0140b8           0x2c          44   
-.text.INTRestoreInterru 0x9d0140e4           0x1c          28   
-.text.CheKseg0CacheOff  0x9d014100           0x18          24   
-.text.CheKseg0CacheOn   0x9d014118           0x18          24   
-.text                   0x9d014130           0x18          24  App's exec code 
-.text.INTDisableInterru 0x9d014148            0x8           8   
-.text.INTEnableInterrup 0x9d014150            0x8           8   
-.text._on_reset         0x9d014158            0x8           8   
-.text._on_bootstrap     0x9d014160            0x8           8   
-      Total kseg0_program_mem used  :      0xccd8       52440  10.7% of 0x77b70
+.text                   0x9d01375c          0x4dc        1244  App's exec code 
+.text._NVMOperation     0x9d013c38          0x114         276   
+.rodata                 0x9d013d4c           0xec         236  Read-only const 
+.text.general_exception 0x9d013e38           0xdc         220   
+.text.main_entry        0x9d013f14           0x4c          76   
+.text._bootstrap_except 0x9d013f60           0x48          72   
+.text._general_exceptio 0x9d013fa8           0x48          72   
+.text                   0x9d013ff0           0x44          68  App's exec code 
+.text.NVMWriteRow       0x9d014034           0x38          56   
+.vector_default         0x9d01406c           0x38          56   
+.text.INTEnableSystemMu 0x9d0140a4           0x34          52   
+.text.NVMErasePage      0x9d0140d8           0x2c          44   
+.text.INTRestoreInterru 0x9d014104           0x1c          28   
+.text.CheKseg0CacheOff  0x9d014120           0x18          24   
+.text.CheKseg0CacheOn   0x9d014138           0x18          24   
+.text                   0x9d014150           0x18          24  App's exec code 
+.text.INTDisableInterru 0x9d014168            0x8           8   
+.text.INTEnableInterrup 0x9d014170            0x8           8   
+.text._on_reset         0x9d014178            0x8           8   
+.text._on_bootstrap     0x9d014180            0x8           8   
+      Total kseg0_program_mem used  :      0xccf8       52472  10.7% of 0x77b70
 
 kseg0 Boot-Memory Usage
 section                    address  length [bytes]      (dec)  Description
@@ -313,7 +313,7 @@ section                    address  length [bytes]      (dec)  Description
 .bev_excpt              0x9d007380           0x10          16  BEV-Exception 
          Total kseg1_boot_mem used  :       0x1f8         504  43.2% of 0x490
         --------------------------------------------------------------------------
-         Total Program Memory used  :      0xd0e0       53472  10.8% of 0x79000
+         Total Program Memory used  :      0xd100       53504  10.8% of 0x79000
         --------------------------------------------------------------------------
 
 
@@ -1285,25 +1285,25 @@ END GROUP
  .debug_pubnames
                 0x00000a8a       0x28 c:/program files (x86)/microchip/xc32/v1.32/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libpic32.a(defaultinterrupt.o)
 
-.debug_info     0x00000000     0x67e2
+.debug_info     0x00000000     0x6822
  *(.debug_info .gnu.linkonce.wi.*)
- .debug_info    0x00000000     0x139e build/default/production/_ext/1472/LCDdriver.o
- .debug_info    0x0000139e     0x36fb build/default/production/_ext/1472/pacman2.o
- .debug_info    0x00004a99      0x355 build/default/production/_ext/1472/pacman2data.o
- .debug_info    0x00004dee     0x1046 build/default/production/_ext/1472/recscore.o
- .debug_info    0x00005e34       0xbf c:/program files (x86)/microchip/xc32/v1.32/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libmchp_peripheral_32MX370F512H.a(pcache.o)
- .debug_info    0x00005ef3       0xb6 c:/program files (x86)/microchip/xc32/v1.32/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libmchp_peripheral_32MX370F512H.a(int_disable_interrupts_lib.o)
- .debug_info    0x00005fa9       0xb6 c:/program files (x86)/microchip/xc32/v1.32/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libmchp_peripheral_32MX370F512H.a(int_restore_interrupts_lib.o)
- .debug_info    0x0000605f       0xbc c:/program files (x86)/microchip/xc32/v1.32/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libmchp_peripheral_32MX370F512H.a(int_enable_mv_int_lib.o)
- .debug_info    0x0000611b       0xa6 c:/program files (x86)/microchip/xc32/v1.32/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libmchp_peripheral_32MX370F512H.a(nvm_erase_page_lib.o)
- .debug_info    0x000061c1       0xc7 c:/program files (x86)/microchip/xc32/v1.32/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libmchp_peripheral_32MX370F512H.a(nvm_operation_lib.o)
- .debug_info    0x00006288       0xa4 c:/program files (x86)/microchip/xc32/v1.32/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libmchp_peripheral_32MX370F512H.a(nvm_write_row_lib.o)
- .debug_info    0x0000632c       0xb4 c:/program files (x86)/microchip/xc32/v1.32/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libmchp_peripheral_32MX370F512H.a(int_enable_interrupts_lib.o)
- .debug_info    0x000063e0       0xde c:/program files (x86)/microchip/xc32/v1.32/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
- .debug_info    0x000064be       0xb8 c:/program files (x86)/microchip/xc32/v1.32/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
- .debug_info    0x00006576       0xc0 c:/program files (x86)/microchip/xc32/v1.32/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
- .debug_info    0x00006636       0xda c:/program files (x86)/microchip/xc32/v1.32/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libpic32.a(default-general-exception-handler.o)
- .debug_info    0x00006710       0xd2 c:/program files (x86)/microchip/xc32/v1.32/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libpic32.a(defaultinterrupt.o)
+ .debug_info    0x00000000     0x13b7 build/default/production/_ext/1472/LCDdriver.o
+ .debug_info    0x000013b7     0x3708 build/default/production/_ext/1472/pacman2.o
+ .debug_info    0x00004abf      0x362 build/default/production/_ext/1472/pacman2data.o
+ .debug_info    0x00004e21     0x1053 build/default/production/_ext/1472/recscore.o
+ .debug_info    0x00005e74       0xbf c:/program files (x86)/microchip/xc32/v1.32/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libmchp_peripheral_32MX370F512H.a(pcache.o)
+ .debug_info    0x00005f33       0xb6 c:/program files (x86)/microchip/xc32/v1.32/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libmchp_peripheral_32MX370F512H.a(int_disable_interrupts_lib.o)
+ .debug_info    0x00005fe9       0xb6 c:/program files (x86)/microchip/xc32/v1.32/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libmchp_peripheral_32MX370F512H.a(int_restore_interrupts_lib.o)
+ .debug_info    0x0000609f       0xbc c:/program files (x86)/microchip/xc32/v1.32/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libmchp_peripheral_32MX370F512H.a(int_enable_mv_int_lib.o)
+ .debug_info    0x0000615b       0xa6 c:/program files (x86)/microchip/xc32/v1.32/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libmchp_peripheral_32MX370F512H.a(nvm_erase_page_lib.o)
+ .debug_info    0x00006201       0xc7 c:/program files (x86)/microchip/xc32/v1.32/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libmchp_peripheral_32MX370F512H.a(nvm_operation_lib.o)
+ .debug_info    0x000062c8       0xa4 c:/program files (x86)/microchip/xc32/v1.32/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libmchp_peripheral_32MX370F512H.a(nvm_write_row_lib.o)
+ .debug_info    0x0000636c       0xb4 c:/program files (x86)/microchip/xc32/v1.32/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libmchp_peripheral_32MX370F512H.a(int_enable_interrupts_lib.o)
+ .debug_info    0x00006420       0xde c:/program files (x86)/microchip/xc32/v1.32/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
+ .debug_info    0x000064fe       0xb8 c:/program files (x86)/microchip/xc32/v1.32/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
+ .debug_info    0x000065b6       0xc0 c:/program files (x86)/microchip/xc32/v1.32/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
+ .debug_info    0x00006676       0xda c:/program files (x86)/microchip/xc32/v1.32/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libpic32.a(default-general-exception-handler.o)
+ .debug_info    0x00006750       0xd2 c:/program files (x86)/microchip/xc32/v1.32/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libpic32.a(defaultinterrupt.o)
 
 .debug_abbrev   0x00000000      0xa0f
  *(.debug_abbrev)
@@ -1325,25 +1325,25 @@ END GROUP
  .debug_abbrev  0x000009c9       0x23 c:/program files (x86)/microchip/xc32/v1.32/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libpic32.a(default-general-exception-handler.o)
  .debug_abbrev  0x000009ec       0x23 c:/program files (x86)/microchip/xc32/v1.32/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libpic32.a(defaultinterrupt.o)
 
-.debug_line     0x00000000     0x14f4
+.debug_line     0x00000000     0x152a
  *(.debug_line)
- .debug_line    0x00000000      0x1d9 build/default/production/_ext/1472/LCDdriver.o
- .debug_line    0x000001d9      0xab1 build/default/production/_ext/1472/pacman2.o
- .debug_line    0x00000c8a       0x5d build/default/production/_ext/1472/pacman2data.o
- .debug_line    0x00000ce7      0x186 build/default/production/_ext/1472/recscore.o
- .debug_line    0x00000e6d       0x62 c:/program files (x86)/microchip/xc32/v1.32/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libmchp_peripheral_32MX370F512H.a(pcache.o)
- .debug_line    0x00000ecf       0x73 c:/program files (x86)/microchip/xc32/v1.32/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libmchp_peripheral_32MX370F512H.a(int_disable_interrupts_lib.o)
- .debug_line    0x00000f42       0x73 c:/program files (x86)/microchip/xc32/v1.32/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libmchp_peripheral_32MX370F512H.a(int_restore_interrupts_lib.o)
- .debug_line    0x00000fb5       0x6e c:/program files (x86)/microchip/xc32/v1.32/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libmchp_peripheral_32MX370F512H.a(int_enable_mv_int_lib.o)
- .debug_line    0x00001023       0x6b c:/program files (x86)/microchip/xc32/v1.32/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libmchp_peripheral_32MX370F512H.a(nvm_erase_page_lib.o)
- .debug_line    0x0000108e       0xbc c:/program files (x86)/microchip/xc32/v1.32/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libmchp_peripheral_32MX370F512H.a(nvm_operation_lib.o)
- .debug_line    0x0000114a       0x6a c:/program files (x86)/microchip/xc32/v1.32/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libmchp_peripheral_32MX370F512H.a(nvm_write_row_lib.o)
- .debug_line    0x000011b4       0x72 c:/program files (x86)/microchip/xc32/v1.32/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libmchp_peripheral_32MX370F512H.a(int_enable_interrupts_lib.o)
- .debug_line    0x00001226       0x97 c:/program files (x86)/microchip/xc32/v1.32/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
- .debug_line    0x000012bd       0x84 c:/program files (x86)/microchip/xc32/v1.32/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
- .debug_line    0x00001341       0x88 c:/program files (x86)/microchip/xc32/v1.32/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
- .debug_line    0x000013c9       0x95 c:/program files (x86)/microchip/xc32/v1.32/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libpic32.a(default-general-exception-handler.o)
- .debug_line    0x0000145e       0x96 c:/program files (x86)/microchip/xc32/v1.32/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libpic32.a(defaultinterrupt.o)
+ .debug_line    0x00000000      0x1e8 build/default/production/_ext/1472/LCDdriver.o
+ .debug_line    0x000001e8      0xabe build/default/production/_ext/1472/pacman2.o
+ .debug_line    0x00000ca6       0x6a build/default/production/_ext/1472/pacman2data.o
+ .debug_line    0x00000d10      0x193 build/default/production/_ext/1472/recscore.o
+ .debug_line    0x00000ea3       0x62 c:/program files (x86)/microchip/xc32/v1.32/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libmchp_peripheral_32MX370F512H.a(pcache.o)
+ .debug_line    0x00000f05       0x73 c:/program files (x86)/microchip/xc32/v1.32/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libmchp_peripheral_32MX370F512H.a(int_disable_interrupts_lib.o)
+ .debug_line    0x00000f78       0x73 c:/program files (x86)/microchip/xc32/v1.32/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libmchp_peripheral_32MX370F512H.a(int_restore_interrupts_lib.o)
+ .debug_line    0x00000feb       0x6e c:/program files (x86)/microchip/xc32/v1.32/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libmchp_peripheral_32MX370F512H.a(int_enable_mv_int_lib.o)
+ .debug_line    0x00001059       0x6b c:/program files (x86)/microchip/xc32/v1.32/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libmchp_peripheral_32MX370F512H.a(nvm_erase_page_lib.o)
+ .debug_line    0x000010c4       0xbc c:/program files (x86)/microchip/xc32/v1.32/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libmchp_peripheral_32MX370F512H.a(nvm_operation_lib.o)
+ .debug_line    0x00001180       0x6a c:/program files (x86)/microchip/xc32/v1.32/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libmchp_peripheral_32MX370F512H.a(nvm_write_row_lib.o)
+ .debug_line    0x000011ea       0x72 c:/program files (x86)/microchip/xc32/v1.32/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libmchp_peripheral_32MX370F512H.a(int_enable_interrupts_lib.o)
+ .debug_line    0x0000125c       0x97 c:/program files (x86)/microchip/xc32/v1.32/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
+ .debug_line    0x000012f3       0x84 c:/program files (x86)/microchip/xc32/v1.32/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
+ .debug_line    0x00001377       0x88 c:/program files (x86)/microchip/xc32/v1.32/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
+ .debug_line    0x000013ff       0x95 c:/program files (x86)/microchip/xc32/v1.32/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libpic32.a(default-general-exception-handler.o)
+ .debug_line    0x00001494       0x96 c:/program files (x86)/microchip/xc32/v1.32/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libpic32.a(defaultinterrupt.o)
 
 .debug_frame    0x00000000      0x97c
  *(.debug_frame)
@@ -1384,11 +1384,11 @@ END GROUP
  .debug_str     0x00000558        0x0 c:/program files (x86)/microchip/xc32/v1.32/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libpic32.a(default-general-exception-handler.o)
  .debug_str     0x00000558        0x0 c:/program files (x86)/microchip/xc32/v1.32/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libpic32.a(defaultinterrupt.o)
 
-.debug_loc      0x00000000     0x1844
+.debug_loc      0x00000000     0x184f
  *(.debug_loc)
- .debug_loc     0x00000000      0x212 build/default/production/_ext/1472/LCDdriver.o
- .debug_loc     0x00000212     0x156c build/default/production/_ext/1472/pacman2.o
- .debug_loc     0x0000177e       0xc6 build/default/production/_ext/1472/recscore.o
+ .debug_loc     0x00000000      0x21d build/default/production/_ext/1472/LCDdriver.o
+ .debug_loc     0x0000021d     0x156c build/default/production/_ext/1472/pacman2.o
+ .debug_loc     0x00001789       0xc6 build/default/production/_ext/1472/recscore.o
 
 .debug_macinfo
  *(.debug_macinfo)
@@ -2111,8 +2111,8 @@ LOAD data_init
 .dinit          0x9d0132bc      0x4a0
  .dinit         0x9d0132bc      0x4a0 data_init
 
-.text           0x9d01375c      0x4bc
- .text          0x9d01375c      0x388 build/default/production/_ext/1472/LCDdriver.o
+.text           0x9d01375c      0x4dc
+ .text          0x9d01375c      0x3a8 build/default/production/_ext/1472/LCDdriver.o
                 0x9d01375c                LCD_set_dat
                 0x9d01379c                LCD_WriteIndex
                 0x9d0137e8                LCD_WriteData
@@ -2125,117 +2125,117 @@ LOAD data_init
                 0x9d013a3c                LCD_Clear
                 0x9d013a68                drawPixel
                 0x9d013a9c                getColor
- .text          0x9d013ae4      0x134 build/default/production/_ext/1472/recscore.o
-                0x9d013ae4                init_recscore
-                0x9d013b98                write_recscore
-                0x9d013bf4                read_recscore
+ .text          0x9d013b04      0x134 build/default/production/_ext/1472/recscore.o
+                0x9d013b04                init_recscore
+                0x9d013bb8                write_recscore
+                0x9d013c14                read_recscore
 
 .text._NVMOperation
-                0x9d013c18      0x114
+                0x9d013c38      0x114
  .text._NVMOperation
-                0x9d013c18      0x114 c:/program files (x86)/microchip/xc32/v1.32/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libmchp_peripheral_32MX370F512H.a(nvm_operation_lib.o)
-                0x9d013c18                _NVMOperation
+                0x9d013c38      0x114 c:/program files (x86)/microchip/xc32/v1.32/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libmchp_peripheral_32MX370F512H.a(nvm_operation_lib.o)
+                0x9d013c38                _NVMOperation
 
-.rodata         0x9d013d2c       0xec
- .rodata        0x9d013d2c       0xec build/default/production/_ext/1472/pacman2.o
+.rodata         0x9d013d4c       0xec
+ .rodata        0x9d013d4c       0xec build/default/production/_ext/1472/pacman2.o
 
 .text.general_exception
-                0x9d013e18       0xdc
+                0x9d013e38       0xdc
  .text.general_exception
-                0x9d013e18       0xdc c:/program files (x86)/microchip/xc32/v1.32/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libpic32.a(general-exception.o)
-                0x9d013e18                _general_exception_context
+                0x9d013e38       0xdc c:/program files (x86)/microchip/xc32/v1.32/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libpic32.a(general-exception.o)
+                0x9d013e38                _general_exception_context
 
 .text.main_entry
-                0x9d013ef4       0x4c
+                0x9d013f14       0x4c
  .text.main_entry
-                0x9d013ef4       0x4c c:/program files (x86)/microchip/xc32/v1.32/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib/./proc/32MX370F512H/crt0_mips32r2.o
-                0x9d013f20                __crt0_exit
+                0x9d013f14       0x4c c:/program files (x86)/microchip/xc32/v1.32/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib/./proc/32MX370F512H/crt0_mips32r2.o
+                0x9d013f40                __crt0_exit
 
 .text._bootstrap_exception_handler
-                0x9d013f40       0x48
+                0x9d013f60       0x48
  .text._bootstrap_exception_handler
-                0x9d013f40       0x48 c:/program files (x86)/microchip/xc32/v1.32/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
-                0x9d013f40                _bootstrap_exception_handler
+                0x9d013f60       0x48 c:/program files (x86)/microchip/xc32/v1.32/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
+                0x9d013f60                _bootstrap_exception_handler
 
 .text._general_exception_handler
-                0x9d013f88       0x48
+                0x9d013fa8       0x48
  .text._general_exception_handler
-                0x9d013f88       0x48 c:/program files (x86)/microchip/xc32/v1.32/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libpic32.a(default-general-exception-handler.o)
-                0x9d013f88                _general_exception_handler
+                0x9d013fa8       0x48 c:/program files (x86)/microchip/xc32/v1.32/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libpic32.a(default-general-exception-handler.o)
+                0x9d013fa8                _general_exception_handler
 
-.text           0x9d013fd0       0x44
- .text          0x9d013fd0       0x44 c:/program files (x86)/microchip/xc32/v1.32/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\pic32_software_reset.o
-                0x9d013fd0                __pic32_software_reset
+.text           0x9d013ff0       0x44
+ .text          0x9d013ff0       0x44 c:/program files (x86)/microchip/xc32/v1.32/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\pic32_software_reset.o
+                0x9d013ff0                __pic32_software_reset
 
 .text.NVMWriteRow
-                0x9d014014       0x38
+                0x9d014034       0x38
  .text.NVMWriteRow
-                0x9d014014       0x38 c:/program files (x86)/microchip/xc32/v1.32/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libmchp_peripheral_32MX370F512H.a(nvm_write_row_lib.o)
-                0x9d014014                NVMWriteRow
+                0x9d014034       0x38 c:/program files (x86)/microchip/xc32/v1.32/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libmchp_peripheral_32MX370F512H.a(nvm_write_row_lib.o)
+                0x9d014034                NVMWriteRow
 
 .vector_default
-                0x9d01404c       0x38
+                0x9d01406c       0x38
  .vector_default
-                0x9d01404c       0x38 c:/program files (x86)/microchip/xc32/v1.32/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libpic32.a(defaultinterrupt.o)
-                0x9d01404c                _DefaultInterrupt
+                0x9d01406c       0x38 c:/program files (x86)/microchip/xc32/v1.32/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libpic32.a(defaultinterrupt.o)
+                0x9d01406c                _DefaultInterrupt
 
 .text.INTEnableSystemMultiVectoredInt
-                0x9d014084       0x34
+                0x9d0140a4       0x34
  .text.INTEnableSystemMultiVectoredInt
-                0x9d014084       0x34 c:/program files (x86)/microchip/xc32/v1.32/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libmchp_peripheral_32MX370F512H.a(int_enable_mv_int_lib.o)
-                0x9d014084                INTEnableSystemMultiVectoredInt
+                0x9d0140a4       0x34 c:/program files (x86)/microchip/xc32/v1.32/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libmchp_peripheral_32MX370F512H.a(int_enable_mv_int_lib.o)
+                0x9d0140a4                INTEnableSystemMultiVectoredInt
 
 .text.NVMErasePage
-                0x9d0140b8       0x2c
+                0x9d0140d8       0x2c
  .text.NVMErasePage
-                0x9d0140b8       0x2c c:/program files (x86)/microchip/xc32/v1.32/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libmchp_peripheral_32MX370F512H.a(nvm_erase_page_lib.o)
-                0x9d0140b8                NVMErasePage
+                0x9d0140d8       0x2c c:/program files (x86)/microchip/xc32/v1.32/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libmchp_peripheral_32MX370F512H.a(nvm_erase_page_lib.o)
+                0x9d0140d8                NVMErasePage
 
 .text.INTRestoreInterrupts
-                0x9d0140e4       0x1c
+                0x9d014104       0x1c
  .text.INTRestoreInterrupts
-                0x9d0140e4       0x1c c:/program files (x86)/microchip/xc32/v1.32/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libmchp_peripheral_32MX370F512H.a(int_restore_interrupts_lib.o)
-                0x9d0140e4                INTRestoreInterrupts
+                0x9d014104       0x1c c:/program files (x86)/microchip/xc32/v1.32/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libmchp_peripheral_32MX370F512H.a(int_restore_interrupts_lib.o)
+                0x9d014104                INTRestoreInterrupts
 
 .text.CheKseg0CacheOff
-                0x9d014100       0x18
+                0x9d014120       0x18
  .text.CheKseg0CacheOff
-                0x9d014100       0x18 c:/program files (x86)/microchip/xc32/v1.32/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libmchp_peripheral_32MX370F512H.a(pcache.o)
-                0x9d014100                CheKseg0CacheOff
+                0x9d014120       0x18 c:/program files (x86)/microchip/xc32/v1.32/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libmchp_peripheral_32MX370F512H.a(pcache.o)
+                0x9d014120                CheKseg0CacheOff
 
 .text.CheKseg0CacheOn
-                0x9d014118       0x18
+                0x9d014138       0x18
  .text.CheKseg0CacheOn
-                0x9d014118       0x18 c:/program files (x86)/microchip/xc32/v1.32/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libmchp_peripheral_32MX370F512H.a(pcache.o)
-                0x9d014118                CheKseg0CacheOn
+                0x9d014138       0x18 c:/program files (x86)/microchip/xc32/v1.32/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libmchp_peripheral_32MX370F512H.a(pcache.o)
+                0x9d014138                CheKseg0CacheOn
 
-.text           0x9d014130       0x18
- .text          0x9d014130       0x18 c:/program files (x86)/microchip/xc32/v1.32/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libpic32.a(default-nmi-handler.o)
-                0x9d014130                _nmi_handler
+.text           0x9d014150       0x18
+ .text          0x9d014150       0x18 c:/program files (x86)/microchip/xc32/v1.32/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libpic32.a(default-nmi-handler.o)
+                0x9d014150                _nmi_handler
 
 .text.INTDisableInterrupts
-                0x9d014148        0x8
+                0x9d014168        0x8
  .text.INTDisableInterrupts
-                0x9d014148        0x8 c:/program files (x86)/microchip/xc32/v1.32/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libmchp_peripheral_32MX370F512H.a(int_disable_interrupts_lib.o)
-                0x9d014148                INTDisableInterrupts
+                0x9d014168        0x8 c:/program files (x86)/microchip/xc32/v1.32/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libmchp_peripheral_32MX370F512H.a(int_disable_interrupts_lib.o)
+                0x9d014168                INTDisableInterrupts
 
 .text.INTEnableInterrupts
-                0x9d014150        0x8
+                0x9d014170        0x8
  .text.INTEnableInterrupts
-                0x9d014150        0x8 c:/program files (x86)/microchip/xc32/v1.32/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libmchp_peripheral_32MX370F512H.a(int_enable_interrupts_lib.o)
-                0x9d014150                INTEnableInterrupts
+                0x9d014170        0x8 c:/program files (x86)/microchip/xc32/v1.32/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libmchp_peripheral_32MX370F512H.a(int_enable_interrupts_lib.o)
+                0x9d014170                INTEnableInterrupts
 
 .text._on_reset
-                0x9d014158        0x8
+                0x9d014178        0x8
  .text._on_reset
-                0x9d014158        0x8 c:/program files (x86)/microchip/xc32/v1.32/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
-                0x9d014158                _on_reset
+                0x9d014178        0x8 c:/program files (x86)/microchip/xc32/v1.32/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
+                0x9d014178                _on_reset
 
 .text._on_bootstrap
-                0x9d014160        0x8
+                0x9d014180        0x8
  .text._on_bootstrap
-                0x9d014160        0x8 c:/program files (x86)/microchip/xc32/v1.32/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
-                0x9d014160                _on_bootstrap
+                0x9d014180        0x8 c:/program files (x86)/microchip/xc32/v1.32/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
+                0x9d014180                _on_bootstrap
 
 .text%z174      0x00000000        0x0
  .text          0x00000000        0x0 c:/program files (x86)/microchip/xc32/v1.32/bin/bin/../../lib/gcc/pic32mx/4.5.2/../../../../pic32mx/lib\libpic32.a(defaultinterrupt.o)

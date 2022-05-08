@@ -111,10 +111,13 @@ void drawPixel(unsigned short x, unsigned short y, unsigned short color){
 }
 
 unsigned short getColor(unsigned short x, unsigned short y){
-	unsigned short d;
+	unsigned short d, temp;
 	LCD_SetCursor(x,y);
 	LCD_WriteIndex(0x2E);
 	LCD_ReadData(); //dummy read
-	d=LCD_ReadData();
-	return (d>>11)+(d&0x7e0)+((d&0x1f)<<11); //swap R and B
+	temp=LCD_ReadData();
+    d=(temp & 0xF800) >> 11 | (temp & 0x00FC) << 3;
+	d=d | (LCD_ReadData() & 0xF800);
+
+	return d;
 }

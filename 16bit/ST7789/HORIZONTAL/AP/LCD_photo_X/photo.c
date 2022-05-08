@@ -69,6 +69,7 @@ void photo(void){
 			pImageFile=IMG_FOPEN(sr.filename,READ); // 320*240 image
 			LCD_Clear(0);//画面消去
 			ImageDecode(pImageFile, IMG_JPEG, 0, 0, 320, 240, IMG_DOWN_SCALE | IMG_ALIGN_CENTER, NULL, NULL);
+//			ImageDecode(pImageFile, IMG_JPEG, 0, 0, 240, 320, IMG_DOWN_SCALE | IMG_ALIGN_CENTER, NULL, NULL);
 			IMG_FCLOSE(pImageFile);
 			drawcount=0;
 			while(drawcount<5*60) asm("wait");
@@ -108,7 +109,15 @@ void main(void){
 	PR2=50000;				// 60分の1秒
 	T2CONSET = 0x8000;			// タイマ2スタート
 
-	LCD_set_Horizontal();
+   	// Timer5初期設定（マイクロ秒ディレイ用）
+	T5CON=0x0010;				// プリスケーラ1:2、タイマ5停止状態
+	IPC5bits.T5IP=4;			// 割り込みレベル4
+	IFS0bits.T5IF=0;
+	IEC0bits.T5IE=1;			// タイマ5割り込み有効化
+
+	LCD_Init();
+
+//	LCD_set_Horizontal();
 	LCD_Clear(0);
 
 	if(FSInit()==FALSE){ //ファイルシステム初期化

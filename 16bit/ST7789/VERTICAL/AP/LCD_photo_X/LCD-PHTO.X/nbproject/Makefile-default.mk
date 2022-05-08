@@ -107,98 +107,98 @@ endif
 # ------------------------------------------------------------------------------------
 # Rules for buildStep: compile
 ifeq ($(TYPE_IMAGE), DEBUG_RUN)
-${OBJECTDIR}/_ext/1472/CustomDisplayDriver.o: ../CustomDisplayDriver.c  .generated_files/flags/default/3e7b17fc975056163f1f40a6c1a1a6758f83ecfa .generated_files/flags/default/1d447ed2c61cac8a5a27d2ab970f84c7592e516e
+${OBJECTDIR}/_ext/1472/CustomDisplayDriver.o: ../CustomDisplayDriver.c  .generated_files/flags/default/40e260e8440ce45fddfc271a1a86a328e6f71dbd .generated_files/flags/default/1d447ed2c61cac8a5a27d2ab970f84c7592e516e
 	@${MKDIR} "${OBJECTDIR}/_ext/1472" 
 	@${RM} ${OBJECTDIR}/_ext/1472/CustomDisplayDriver.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1472/CustomDisplayDriver.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -O1 -MP -MMD -MF "${OBJECTDIR}/_ext/1472/CustomDisplayDriver.o.d" -o ${OBJECTDIR}/_ext/1472/CustomDisplayDriver.o ../CustomDisplayDriver.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)    
 	
-${OBJECTDIR}/_ext/1472/FSIO.o: ../FSIO.c  .generated_files/flags/default/1043ef6ca4e3ab727b642edb1977a1558ed647e3 .generated_files/flags/default/1d447ed2c61cac8a5a27d2ab970f84c7592e516e
+${OBJECTDIR}/_ext/1472/FSIO.o: ../FSIO.c  .generated_files/flags/default/8b2577554b14283467907aeeee6324344f4991ce .generated_files/flags/default/1d447ed2c61cac8a5a27d2ab970f84c7592e516e
 	@${MKDIR} "${OBJECTDIR}/_ext/1472" 
 	@${RM} ${OBJECTDIR}/_ext/1472/FSIO.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1472/FSIO.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -O1 -MP -MMD -MF "${OBJECTDIR}/_ext/1472/FSIO.o.d" -o ${OBJECTDIR}/_ext/1472/FSIO.o ../FSIO.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)    
 	
-${OBJECTDIR}/_ext/1472/ImageDecoder.o: ../ImageDecoder.c  .generated_files/flags/default/74b8ca416249b88638703f5bc2a1cc5d19246b9e .generated_files/flags/default/1d447ed2c61cac8a5a27d2ab970f84c7592e516e
+${OBJECTDIR}/_ext/1472/ImageDecoder.o: ../ImageDecoder.c  .generated_files/flags/default/20a480c4385a3aa4b388460992e302e6418cad78 .generated_files/flags/default/1d447ed2c61cac8a5a27d2ab970f84c7592e516e
 	@${MKDIR} "${OBJECTDIR}/_ext/1472" 
 	@${RM} ${OBJECTDIR}/_ext/1472/ImageDecoder.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1472/ImageDecoder.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -O1 -MP -MMD -MF "${OBJECTDIR}/_ext/1472/ImageDecoder.o.d" -o ${OBJECTDIR}/_ext/1472/ImageDecoder.o ../ImageDecoder.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)    
 	
-${OBJECTDIR}/_ext/1472/JpegDecoder.o: ../JpegDecoder.c  .generated_files/flags/default/9bab9dcc013ca287decd9193cd5ab1bf9a106234 .generated_files/flags/default/1d447ed2c61cac8a5a27d2ab970f84c7592e516e
+${OBJECTDIR}/_ext/1472/JpegDecoder.o: ../JpegDecoder.c  .generated_files/flags/default/dfcbb329568c5c07f10e8c261927ec91116250c5 .generated_files/flags/default/1d447ed2c61cac8a5a27d2ab970f84c7592e516e
 	@${MKDIR} "${OBJECTDIR}/_ext/1472" 
 	@${RM} ${OBJECTDIR}/_ext/1472/JpegDecoder.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1472/JpegDecoder.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -O1 -MP -MMD -MF "${OBJECTDIR}/_ext/1472/JpegDecoder.o.d" -o ${OBJECTDIR}/_ext/1472/JpegDecoder.o ../JpegDecoder.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)    
 	
-${OBJECTDIR}/_ext/1472/LCDdriver.o: ../LCDdriver.c  .generated_files/flags/default/b28143e2c00bb3a957b623f36e7117a879af22a1 .generated_files/flags/default/1d447ed2c61cac8a5a27d2ab970f84c7592e516e
+${OBJECTDIR}/_ext/1472/LCDdriver.o: ../LCDdriver.c  .generated_files/flags/default/3495e00eda21d79608a1bf9c768b4a92a38a43f5 .generated_files/flags/default/1d447ed2c61cac8a5a27d2ab970f84c7592e516e
 	@${MKDIR} "${OBJECTDIR}/_ext/1472" 
 	@${RM} ${OBJECTDIR}/_ext/1472/LCDdriver.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1472/LCDdriver.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -O1 -MP -MMD -MF "${OBJECTDIR}/_ext/1472/LCDdriver.o.d" -o ${OBJECTDIR}/_ext/1472/LCDdriver.o ../LCDdriver.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)    
 	
-${OBJECTDIR}/_ext/1472/SD-SPI.o: ../SD-SPI.c  .generated_files/flags/default/7c0acd749ff3b6bf8dab36cd4babee41260e7f9b .generated_files/flags/default/1d447ed2c61cac8a5a27d2ab970f84c7592e516e
+${OBJECTDIR}/_ext/1472/SD-SPI.o: ../SD-SPI.c  .generated_files/flags/default/cf457a7b75da90a14c9851bef526ff05ab52c42e .generated_files/flags/default/1d447ed2c61cac8a5a27d2ab970f84c7592e516e
 	@${MKDIR} "${OBJECTDIR}/_ext/1472" 
 	@${RM} ${OBJECTDIR}/_ext/1472/SD-SPI.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1472/SD-SPI.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -O1 -MP -MMD -MF "${OBJECTDIR}/_ext/1472/SD-SPI.o.d" -o ${OBJECTDIR}/_ext/1472/SD-SPI.o ../SD-SPI.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)    
 	
-${OBJECTDIR}/_ext/1472/jidctint.o: ../jidctint.c  .generated_files/flags/default/f39c1436575fcf8e80d35a0599f91524a748f16b .generated_files/flags/default/1d447ed2c61cac8a5a27d2ab970f84c7592e516e
+${OBJECTDIR}/_ext/1472/jidctint.o: ../jidctint.c  .generated_files/flags/default/32bcf1ed6d2f7df7f283df774ba335ec2e7bb610 .generated_files/flags/default/1d447ed2c61cac8a5a27d2ab970f84c7592e516e
 	@${MKDIR} "${OBJECTDIR}/_ext/1472" 
 	@${RM} ${OBJECTDIR}/_ext/1472/jidctint.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1472/jidctint.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -O1 -MP -MMD -MF "${OBJECTDIR}/_ext/1472/jidctint.o.d" -o ${OBJECTDIR}/_ext/1472/jidctint.o ../jidctint.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)    
 	
-${OBJECTDIR}/_ext/1472/photo.o: ../photo.c  .generated_files/flags/default/eb5656bcf13b820d8b6ff54e95b76cc08bd41b23 .generated_files/flags/default/1d447ed2c61cac8a5a27d2ab970f84c7592e516e
+${OBJECTDIR}/_ext/1472/photo.o: ../photo.c  .generated_files/flags/default/55a2e8b035e35f9790d1c1a8d0b4859edfa08b4a .generated_files/flags/default/1d447ed2c61cac8a5a27d2ab970f84c7592e516e
 	@${MKDIR} "${OBJECTDIR}/_ext/1472" 
 	@${RM} ${OBJECTDIR}/_ext/1472/photo.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1472/photo.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -O1 -MP -MMD -MF "${OBJECTDIR}/_ext/1472/photo.o.d" -o ${OBJECTDIR}/_ext/1472/photo.o ../photo.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)    
 	
 else
-${OBJECTDIR}/_ext/1472/CustomDisplayDriver.o: ../CustomDisplayDriver.c  .generated_files/flags/default/4cb57bb1a14b701766e8e10fbd763ce44818badf .generated_files/flags/default/1d447ed2c61cac8a5a27d2ab970f84c7592e516e
+${OBJECTDIR}/_ext/1472/CustomDisplayDriver.o: ../CustomDisplayDriver.c  .generated_files/flags/default/4f7997d4ae0dc7852c7a5e3a3b523e5bf4c78e56 .generated_files/flags/default/1d447ed2c61cac8a5a27d2ab970f84c7592e516e
 	@${MKDIR} "${OBJECTDIR}/_ext/1472" 
 	@${RM} ${OBJECTDIR}/_ext/1472/CustomDisplayDriver.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1472/CustomDisplayDriver.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -O1 -MP -MMD -MF "${OBJECTDIR}/_ext/1472/CustomDisplayDriver.o.d" -o ${OBJECTDIR}/_ext/1472/CustomDisplayDriver.o ../CustomDisplayDriver.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)    
 	
-${OBJECTDIR}/_ext/1472/FSIO.o: ../FSIO.c  .generated_files/flags/default/6e0f513606f59e33085bcac8e2fae067451c7043 .generated_files/flags/default/1d447ed2c61cac8a5a27d2ab970f84c7592e516e
+${OBJECTDIR}/_ext/1472/FSIO.o: ../FSIO.c  .generated_files/flags/default/8b6a9253f52e3f92d961f81c6fbd557d271fec3f .generated_files/flags/default/1d447ed2c61cac8a5a27d2ab970f84c7592e516e
 	@${MKDIR} "${OBJECTDIR}/_ext/1472" 
 	@${RM} ${OBJECTDIR}/_ext/1472/FSIO.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1472/FSIO.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -O1 -MP -MMD -MF "${OBJECTDIR}/_ext/1472/FSIO.o.d" -o ${OBJECTDIR}/_ext/1472/FSIO.o ../FSIO.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)    
 	
-${OBJECTDIR}/_ext/1472/ImageDecoder.o: ../ImageDecoder.c  .generated_files/flags/default/e0d0853ea78453a567fc7ae381f29931775fbf61 .generated_files/flags/default/1d447ed2c61cac8a5a27d2ab970f84c7592e516e
+${OBJECTDIR}/_ext/1472/ImageDecoder.o: ../ImageDecoder.c  .generated_files/flags/default/b0759315d9f4a6f5f8cdb06b99c4119d5b1672d2 .generated_files/flags/default/1d447ed2c61cac8a5a27d2ab970f84c7592e516e
 	@${MKDIR} "${OBJECTDIR}/_ext/1472" 
 	@${RM} ${OBJECTDIR}/_ext/1472/ImageDecoder.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1472/ImageDecoder.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -O1 -MP -MMD -MF "${OBJECTDIR}/_ext/1472/ImageDecoder.o.d" -o ${OBJECTDIR}/_ext/1472/ImageDecoder.o ../ImageDecoder.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)    
 	
-${OBJECTDIR}/_ext/1472/JpegDecoder.o: ../JpegDecoder.c  .generated_files/flags/default/c020c0954ba8cccf102a3a754718dd5a45f1dc6a .generated_files/flags/default/1d447ed2c61cac8a5a27d2ab970f84c7592e516e
+${OBJECTDIR}/_ext/1472/JpegDecoder.o: ../JpegDecoder.c  .generated_files/flags/default/f856abec8a5d487dd52c31d355091e9e3e0a67 .generated_files/flags/default/1d447ed2c61cac8a5a27d2ab970f84c7592e516e
 	@${MKDIR} "${OBJECTDIR}/_ext/1472" 
 	@${RM} ${OBJECTDIR}/_ext/1472/JpegDecoder.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1472/JpegDecoder.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -O1 -MP -MMD -MF "${OBJECTDIR}/_ext/1472/JpegDecoder.o.d" -o ${OBJECTDIR}/_ext/1472/JpegDecoder.o ../JpegDecoder.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)    
 	
-${OBJECTDIR}/_ext/1472/LCDdriver.o: ../LCDdriver.c  .generated_files/flags/default/65adaabd858492839d1930522d1208f959621b09 .generated_files/flags/default/1d447ed2c61cac8a5a27d2ab970f84c7592e516e
+${OBJECTDIR}/_ext/1472/LCDdriver.o: ../LCDdriver.c  .generated_files/flags/default/eaecf499724e81970515bdfe560f4ae2419ec810 .generated_files/flags/default/1d447ed2c61cac8a5a27d2ab970f84c7592e516e
 	@${MKDIR} "${OBJECTDIR}/_ext/1472" 
 	@${RM} ${OBJECTDIR}/_ext/1472/LCDdriver.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1472/LCDdriver.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -O1 -MP -MMD -MF "${OBJECTDIR}/_ext/1472/LCDdriver.o.d" -o ${OBJECTDIR}/_ext/1472/LCDdriver.o ../LCDdriver.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)    
 	
-${OBJECTDIR}/_ext/1472/SD-SPI.o: ../SD-SPI.c  .generated_files/flags/default/345c6f482b4d81a8b8a2a19eb420129426f500d3 .generated_files/flags/default/1d447ed2c61cac8a5a27d2ab970f84c7592e516e
+${OBJECTDIR}/_ext/1472/SD-SPI.o: ../SD-SPI.c  .generated_files/flags/default/cdaed794bd2accc05b0618679f7e3cff1c8c3e46 .generated_files/flags/default/1d447ed2c61cac8a5a27d2ab970f84c7592e516e
 	@${MKDIR} "${OBJECTDIR}/_ext/1472" 
 	@${RM} ${OBJECTDIR}/_ext/1472/SD-SPI.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1472/SD-SPI.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -O1 -MP -MMD -MF "${OBJECTDIR}/_ext/1472/SD-SPI.o.d" -o ${OBJECTDIR}/_ext/1472/SD-SPI.o ../SD-SPI.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)    
 	
-${OBJECTDIR}/_ext/1472/jidctint.o: ../jidctint.c  .generated_files/flags/default/91959be128a941555bf87986ab31934b8338b239 .generated_files/flags/default/1d447ed2c61cac8a5a27d2ab970f84c7592e516e
+${OBJECTDIR}/_ext/1472/jidctint.o: ../jidctint.c  .generated_files/flags/default/b4ecd1123bf56237c407e50480b226ff44eac960 .generated_files/flags/default/1d447ed2c61cac8a5a27d2ab970f84c7592e516e
 	@${MKDIR} "${OBJECTDIR}/_ext/1472" 
 	@${RM} ${OBJECTDIR}/_ext/1472/jidctint.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1472/jidctint.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -O1 -MP -MMD -MF "${OBJECTDIR}/_ext/1472/jidctint.o.d" -o ${OBJECTDIR}/_ext/1472/jidctint.o ../jidctint.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)    
 	
-${OBJECTDIR}/_ext/1472/photo.o: ../photo.c  .generated_files/flags/default/e661161cc3f2c857a7cdc10c11bebe91d9e95723 .generated_files/flags/default/1d447ed2c61cac8a5a27d2ab970f84c7592e516e
+${OBJECTDIR}/_ext/1472/photo.o: ../photo.c  .generated_files/flags/default/ef0605f12e7955d53defcdc8a25934c64c013af2 .generated_files/flags/default/1d447ed2c61cac8a5a27d2ab970f84c7592e516e
 	@${MKDIR} "${OBJECTDIR}/_ext/1472" 
 	@${RM} ${OBJECTDIR}/_ext/1472/photo.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1472/photo.o 

@@ -107,50 +107,50 @@ endif
 # ------------------------------------------------------------------------------------
 # Rules for buildStep: compile
 ifeq ($(TYPE_IMAGE), DEBUG_RUN)
-${OBJECTDIR}/_ext/1472/LCDdriver.o: ../LCDdriver.c  .generated_files/flags/default/c1d74d4569abe821d32d6bdbafb1f7297a84e2d .generated_files/flags/default/1d447ed2c61cac8a5a27d2ab970f84c7592e516e
+${OBJECTDIR}/_ext/1472/LCDdriver.o: ../LCDdriver.c  .generated_files/flags/default/d3439e8ccc0c00e0a63509dfa045bfda0f40bb16 .generated_files/flags/default/1d447ed2c61cac8a5a27d2ab970f84c7592e516e
 	@${MKDIR} "${OBJECTDIR}/_ext/1472" 
 	@${RM} ${OBJECTDIR}/_ext/1472/LCDdriver.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1472/LCDdriver.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -O1 -MP -MMD -MF "${OBJECTDIR}/_ext/1472/LCDdriver.o.d" -o ${OBJECTDIR}/_ext/1472/LCDdriver.o ../LCDdriver.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)    
 	
-${OBJECTDIR}/_ext/1472/tetris.o: ../tetris.c  .generated_files/flags/default/746adc971fe70a6444a7a5c3d8eeb06669c9c9ce .generated_files/flags/default/1d447ed2c61cac8a5a27d2ab970f84c7592e516e
+${OBJECTDIR}/_ext/1472/tetris.o: ../tetris.c  .generated_files/flags/default/4d6707afed2eb0129d2f69770e765702bfd43bd4 .generated_files/flags/default/1d447ed2c61cac8a5a27d2ab970f84c7592e516e
 	@${MKDIR} "${OBJECTDIR}/_ext/1472" 
 	@${RM} ${OBJECTDIR}/_ext/1472/tetris.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1472/tetris.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -O1 -MP -MMD -MF "${OBJECTDIR}/_ext/1472/tetris.o.d" -o ${OBJECTDIR}/_ext/1472/tetris.o ../tetris.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)    
 	
-${OBJECTDIR}/_ext/1472/tetrisfont.o: ../tetrisfont.c  .generated_files/flags/default/a3376662a345ad259ecef992ade16fa87a77e593 .generated_files/flags/default/1d447ed2c61cac8a5a27d2ab970f84c7592e516e
+${OBJECTDIR}/_ext/1472/tetrisfont.o: ../tetrisfont.c  .generated_files/flags/default/ac1f7398490630e6291850b3a9f3d2019116b936 .generated_files/flags/default/1d447ed2c61cac8a5a27d2ab970f84c7592e516e
 	@${MKDIR} "${OBJECTDIR}/_ext/1472" 
 	@${RM} ${OBJECTDIR}/_ext/1472/tetrisfont.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1472/tetrisfont.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -O1 -MP -MMD -MF "${OBJECTDIR}/_ext/1472/tetrisfont.o.d" -o ${OBJECTDIR}/_ext/1472/tetrisfont.o ../tetrisfont.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)    
 	
-${OBJECTDIR}/_ext/1472/recscore.o: ../recscore.c  .generated_files/flags/default/a7feb162e3e2db628bbe376c5f7f19332ee1cebf .generated_files/flags/default/1d447ed2c61cac8a5a27d2ab970f84c7592e516e
+${OBJECTDIR}/_ext/1472/recscore.o: ../recscore.c  .generated_files/flags/default/91a3568bb97aecbdf584e84ad2e08c8e76f15146 .generated_files/flags/default/1d447ed2c61cac8a5a27d2ab970f84c7592e516e
 	@${MKDIR} "${OBJECTDIR}/_ext/1472" 
 	@${RM} ${OBJECTDIR}/_ext/1472/recscore.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1472/recscore.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -O1 -MP -MMD -MF "${OBJECTDIR}/_ext/1472/recscore.o.d" -o ${OBJECTDIR}/_ext/1472/recscore.o ../recscore.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)    
 	
 else
-${OBJECTDIR}/_ext/1472/LCDdriver.o: ../LCDdriver.c  .generated_files/flags/default/e6ae9db32be4ec1732972ec6b1735715f6ad4bd7 .generated_files/flags/default/1d447ed2c61cac8a5a27d2ab970f84c7592e516e
+${OBJECTDIR}/_ext/1472/LCDdriver.o: ../LCDdriver.c  .generated_files/flags/default/1c71e85303c1dc8973aa92bd040f5a66efb5abd6 .generated_files/flags/default/1d447ed2c61cac8a5a27d2ab970f84c7592e516e
 	@${MKDIR} "${OBJECTDIR}/_ext/1472" 
 	@${RM} ${OBJECTDIR}/_ext/1472/LCDdriver.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1472/LCDdriver.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -O1 -MP -MMD -MF "${OBJECTDIR}/_ext/1472/LCDdriver.o.d" -o ${OBJECTDIR}/_ext/1472/LCDdriver.o ../LCDdriver.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)    
 	
-${OBJECTDIR}/_ext/1472/tetris.o: ../tetris.c  .generated_files/flags/default/d1448a3d9127c66a8146ae639a8b0b33d241fd77 .generated_files/flags/default/1d447ed2c61cac8a5a27d2ab970f84c7592e516e
+${OBJECTDIR}/_ext/1472/tetris.o: ../tetris.c  .generated_files/flags/default/ebf74fa6024f40d56ef2e32f05a5f9c13e0735b7 .generated_files/flags/default/1d447ed2c61cac8a5a27d2ab970f84c7592e516e
 	@${MKDIR} "${OBJECTDIR}/_ext/1472" 
 	@${RM} ${OBJECTDIR}/_ext/1472/tetris.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1472/tetris.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -O1 -MP -MMD -MF "${OBJECTDIR}/_ext/1472/tetris.o.d" -o ${OBJECTDIR}/_ext/1472/tetris.o ../tetris.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)    
 	
-${OBJECTDIR}/_ext/1472/tetrisfont.o: ../tetrisfont.c  .generated_files/flags/default/9670bf267bfb6b05a94b85d115a020bc64749fa7 .generated_files/flags/default/1d447ed2c61cac8a5a27d2ab970f84c7592e516e
+${OBJECTDIR}/_ext/1472/tetrisfont.o: ../tetrisfont.c  .generated_files/flags/default/32cf3bd3bc8fff0b9d9b1568975e1d982b31f4b5 .generated_files/flags/default/1d447ed2c61cac8a5a27d2ab970f84c7592e516e
 	@${MKDIR} "${OBJECTDIR}/_ext/1472" 
 	@${RM} ${OBJECTDIR}/_ext/1472/tetrisfont.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1472/tetrisfont.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -O1 -MP -MMD -MF "${OBJECTDIR}/_ext/1472/tetrisfont.o.d" -o ${OBJECTDIR}/_ext/1472/tetrisfont.o ../tetrisfont.c    -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)    
 	
-${OBJECTDIR}/_ext/1472/recscore.o: ../recscore.c  .generated_files/flags/default/990ff5a36a7c89a5f8ead36094f04fc8bee4338b .generated_files/flags/default/1d447ed2c61cac8a5a27d2ab970f84c7592e516e
+${OBJECTDIR}/_ext/1472/recscore.o: ../recscore.c  .generated_files/flags/default/5c96ea72e757643df467e0ef36b409b6e6e1e54b .generated_files/flags/default/1d447ed2c61cac8a5a27d2ab970f84c7592e516e
 	@${MKDIR} "${OBJECTDIR}/_ext/1472" 
 	@${RM} ${OBJECTDIR}/_ext/1472/recscore.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1472/recscore.o 
