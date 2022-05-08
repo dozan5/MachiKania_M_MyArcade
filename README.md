@@ -38,6 +38,9 @@
 ## 実機写真   
 ![](My1.jpg)  
 ![](My2.jpg)  
+![](My3.jpg)  
+![](My4.jpg)  
+![](My5.jpg)  
 
 ## 動作環境  
 　[MyAcade](https://www.myarcadegaming.com/)の筐体に組込まなくても　[MachiKania type M](http://www.ze.em-net.ne.jp/~kenken/machikania/typem.html)単体でも起動可能です。  
