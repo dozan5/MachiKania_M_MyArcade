@@ -36,13 +36,15 @@
  　　　SDカードへhexファイルをコピーしてください。  
 
 ## 実機写真   
+　ROLLING THUNDER  
 ![](My1.jpg)  
 ![](My2.jpg)  
 
-MY ARCADE搭載LCDの違い
-　左：ROLLING THUNDER搭載 LCD　16bit  
-　右：BUBBLE BOBBLE搭載 LCD　8bit  
+MY ARCADE搭載LCDの違い　　
+　左：ROLLING THUNDER搭載 LCD　16bit　右：BUBBLE BOBBLE搭載 LCD　8bit  
 ![](My3.jpg)  
+
+　BUBBLE BOBBLE  
 ![](My4.jpg)  
 ![](My5.jpg)  
 
