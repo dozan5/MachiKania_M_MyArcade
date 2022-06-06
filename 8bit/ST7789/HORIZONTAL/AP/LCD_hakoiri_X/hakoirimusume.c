@@ -303,7 +303,8 @@ void move(void){
 		if(lastblock!=d){
 			lastblock=d;
 			step++;
-			printnum2(144,248,7,0,step,6);//6桁の数字を表示
+//			printnum2(144,248,7,0,step,6);//6桁の数字を表示
+			printnum2(164,216,7,0,step,6);//6桁の数字を表示
 		}
 	}
 	else{
@@ -428,8 +429,10 @@ void gameinit2(void){
 		LEFTX+FRAMESIZEX+GOALX*BLOCKSIZEX+block[0].xsize*BLOCKSIZEX-1,TOPY+HAKOSIZEY*BLOCKSIZEY+FRAMESIZEY*2-1,COLOR_BACK);
 
 	//手数表示
-	printstr(160,240,7,0,"STEP");
-	printnum2(144,248,7,0,0,6);
+//	printstr(160,240,7,0,"STEP");
+	printstr(180,208,7,0,"STEP");
+//	printnum2(144,248,7,0,0,6);
+	printnum2(164,216,7,0,0,6);
 
 	// 駒を初期配置にする
 	// block.x, block.yを駒の左上座標に設定
